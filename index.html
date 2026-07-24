@@ -13,38 +13,58 @@
         }
 
         .item {
-            background-color: hsl(174, 100%, 85%);
+            background-color: hsl(192, 79%, 78%);
             padding: 1rem;
             border: 2px solid hsl(0, 0%, 4%);
         }
-        .container{
+
+        .container {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-auto-rows: minmax(200px, auto);
-            grid-gap: 1rem; 
+            grid-gap: 1rem;
             grid-template-areas:
                 "header header header"
                 "left-bar content right-bar"
                 "footer footer footer";
         }
-        .item-1{
-           grid-area: header;
+
+        .item-1 {
+            grid-area: header;
         }
-        .item-2{
-              grid-area: left-bar;
+
+        .item-2 {
+            grid-area: left-bar;
         }
-        .item-3{
-              grid-area: content;
+
+        .item-3 {
+            grid-area: content;
         }
-        .item-4{
-              grid-area: right-bar;
+
+        .item-4 {
+            grid-area: right-bar;
         }
-        .item-5{
+
+        .item-5 {
             grid-area: footer;
         }
-    
 
+        .box {
+            padding: 20px;
+            border: 5px solid #00fc43;
+        }
 
+        p {
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+
+        .box-1 {
+            padding: 20px;
+        }
+
+        .box :first-child {
+            border-bottom: none;
+        }
     </style>
 </head>
 
@@ -70,11 +90,11 @@
             <h2>Item - 5</h2>
             <p>Dolorum sit unde tempora accusantium temporibus totam aut consequatur odit!</p>
         </div>
-        <!-- <div class="item item-6">
+        <div class="item item-6">
             <h2>Item - 6</h2>
             <p>Molestiae quisquam ducimus sunt magnam non consequatur earum animi illum?</p>
-        </div> -->
-        <!-- <div class="item item-7">
+        </div>
+        <div class="item item-7">
             <h2>Item - 7</h2>
             <p>Id consequatur dignissimos eos quod fuga accusamus deserunt, temporibus nostrum!</p>
         </div>
@@ -85,8 +105,38 @@
         <div class="item item-9">
             <h2>Item - 9</h2>
             <p>Qui, delectus. Vero, quod explicabo voluptates fuga nisi magni laborum!</p>
-        </div> -->
+        </div>
     </div>
+
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            delectus fuga perferendis nesciunt esse quia doloremque cumque vitae
+            quaerat eveniet minus inventore doloribus, obcaecati temporibus quas
+            placeat amet. Assumenda accusamus laudantium explicabo quis minima
+            distinctio provident doloremque consequatur. Quasi, architecto.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            delectus fuga perferendis nesciunt esse quia doloremque cumque vitae
+            quaerat eveniet minus inventore doloribus, obcaecati temporibus quas
+            placeat amet. Assumenda accusamus laudantium explicabo quis minima
+            distinctio provident doloremque consequatur. Quasi, architecto.
+        </p>
+    </div>
+
+    <div class="box-1">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            delectus fuga perferendis nesciunt esse quia doloremque cumque vitae
+            quaerat eveniet minus inventore doloribus, obcaecati temporibus quas
+            placeat amet. Assumenda accusamus laudantium explicabo quis minima
+            distinctio provident doloremque consequatur. Quasi, architecto.
+        </p>
+    </div>
+
+
 </body>
 
 </html>
