@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .item {
+            background-color: hsl(174, 100%, 85%);
+            padding: 1rem;
+            border: 2px solid hsl(0, 0%, 4%);
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: minmax(200px, auto);
+            grid-gap: 1rem; 
+            grid-template-areas:
+                "header header header"
+                "left-bar content right-bar"
+                "footer footer footer";
+        }
+        .item-1{
+           grid-area: header;
+        }
+        .item-2{
+              grid-area: left-bar;
+        }
+        .item-3{
+              grid-area: content;
+        }
+        .item-4{
+              grid-area: right-bar;
+        }
+        .item-5{
+            grid-area: footer;
+        }
+    
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">
+            <h2>Item - 1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, maiores.</p>
+        </div>
+        <div class="item item-2">
+            <h2>Item - 2</h2>
+            <p>Delectus quidem maxime autem ad repellat? Dignissimos officiis veritatis provident.</p>
+        </div>
+        <div class="item item-3">
+            <h2>Item - 3</h2>
+            <p>Laborum temporibus perferendis aliquam totam non placeat harum, molestiae neque!</p>
+        </div>
+        <div class="item item-4">
+            <h2>Item - 4</h2>
+            <p>Commodi a deleniti debitis fugiat eveniet similique accusantium ipsam ab.</p>
+        </div>
+        <div class="item item-5">
+            <h2>Item - 5</h2>
+            <p>Dolorum sit unde tempora accusantium temporibus totam aut consequatur odit!</p>
+        </div>
+        <!-- <div class="item item-6">
+            <h2>Item - 6</h2>
+            <p>Molestiae quisquam ducimus sunt magnam non consequatur earum animi illum?</p>
+        </div> -->
+        <!-- <div class="item item-7">
+            <h2>Item - 7</h2>
+            <p>Id consequatur dignissimos eos quod fuga accusamus deserunt, temporibus nostrum!</p>
+        </div>
+        <div class="item item-8">
+            <h2>Item - 8</h2>
+            <p>In ex quidem, excepturi maxime laborum sunt optio reprehenderit tenetur!</p>
+        </div>
+        <div class="item item-9">
+            <h2>Item - 9</h2>
+            <p>Qui, delectus. Vero, quod explicabo voluptates fuga nisi magni laborum!</p>
+        </div> -->
+    </div>
+</body>
+
+</html>
